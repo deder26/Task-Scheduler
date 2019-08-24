@@ -80,6 +80,7 @@ public class SetTask extends AppCompatActivity {
                     mi.setText("");
                     format.setText("");
                     task.setText("");*/
+                   finish();
 
                }
                else{
