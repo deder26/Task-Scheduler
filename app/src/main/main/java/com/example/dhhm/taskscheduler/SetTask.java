@@ -59,16 +59,16 @@ public class SetTask extends AppCompatActivity {
                 AlarmManager am=(AlarmManager)getSystemService(ALARM_SERVICE);
                 am.set(AlarmManager.RTC,System.currentTimeMillis() + time*1000,p1);*/
 
-               // if(day.length() !=0 && month.length() !=0 && year.length() !=0 && hour.length() !=0 && minute.length() !=0 && format1.length() !=0 && Task.length() !=0)
-               // {
-                //    boolean msg = myDb.adddata(day,month,year,hour,minute,format1,Task);
+               if(day.length() !=0 && month.length() !=0 && year.length() !=0 && hour.length() !=0 && minute.length() !=0 && format1.length() !=0 && Task.length() !=0)
+                {
+                    boolean msg = myDb.adddata(day,month,year,hour,minute,format1,Task);
 
-                 //   if(msg==true) {
-                 //       Toast.makeText(SetTask.this, "Successfully Added!", Toast.LENGTH_SHORT).show();
-                //    }
-                //    else {
+                    if(msg==true) {
+                        Toast.makeText(SetTask.this, "Successfully Added!", Toast.LENGTH_SHORT).show();
+                    }
+                    else {
                         Toast.makeText(SetTask.this, "Please Try Again", Toast.LENGTH_SHORT).show();
-               //     }
+                    }
 
 
 
@@ -81,10 +81,10 @@ public class SetTask extends AppCompatActivity {
                     format.setText("");
                     task.setText("");*/
 
-               //}
-               // else{
-              //      Toast.makeText(SetTask.this,"FIll THE EMPTY FIELD",Toast.LENGTH_SHORT).show();
-             //  }
+               }
+               else{
+                    Toast.makeText(SetTask.this,"FIll THE EMPTY FIELD",Toast.LENGTH_SHORT).show();
+               }
 
             }
 
